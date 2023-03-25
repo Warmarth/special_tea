@@ -1,0 +1,376 @@
+/* my imported fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,900;1,400&family=Playfair+Display&family=Satisfy&display=swap");
+
+/* ========== global variables ============= */
+:root {
+  --clr-pry-1: #004a8f;
+  --clr-pry-2: #5892c7;
+  --clr-pry-3: #b0d9ff;
+  --clr-pry-4: #bde0fe;
+  --clr-sec-1: #a294cc;
+  --clr-sec-2: #864899;
+  --clr-sec-3: #c37cb3;
+  --clr-sec-4: #eed3e5;
+  --clr-gray-1: #7a7a7a;
+  --clr-gray-2: #696969;
+  --clr-gray-3: #343434;
+  --clr-grn-1: #006466;
+  --clr-grn-2: #144552;
+  /* ================== font families============= */
+  --ff-main: "Playfair Display";
+  --ff-sub: "Alegreya";
+  --ff-curry: "Satisfy";
+  /* others */
+  --transition: all 3s linear;
+  --radius: 1rem;
+  --spacing: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: var(--ff-sub);
+  color: var(--clr-sec-4);
+  font-size: 500;
+  line-height: var(--spacing);
+}
+/* for my headings */
+h1,
+h2,
+h4 {
+  text-transform: capitalize;
+  line-height: var(--spacing);
+}
+h1 {
+  font-family: var(--ff-main);
+}
+h2 {
+  font-family: var(--ff-sub);
+}
+h4 {
+  font-family: var(--ff-curry);
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: var(--clr-sec-3);
+  font-family: var(--ff-main);
+  text-transform: capitalize;
+  font-size: 0.5em;
+  padding: 1.5rem;
+  margin-top: 1em;
+  border-radius: var(--radius);
+  display: inline-block;
+  outline-offset: 0.5rem;
+}
+
+/* ================== MeetuP header ================= */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./image/mp-img-1.jpg") center/cover no-repeat fixed;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header-title {
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.header-title p {
+  text-transform: lowercase;
+}
+.btn,
+.explore {
+  background: var(--clr-sec-3);
+}
+.explore:hover {
+  background-color: var(--clr-gray-3);
+  color: var(--clr-pry-1);
+  font-weight: 900;
+}
+
+.section-divider {
+  height: 0.5rem;
+  background: linear-gradient(to left, #d1293d, #3465dd);
+}
+
+/* ==================== item ======================= */
+
+/* ==================== login nav bar ======================= */
+.reg {
+  background: var(--clr-pry-3);
+  min-height: 2rem;
+  text-align: right;
+  font-family: var(--ff-sub);
+  text-transform: capitalize;
+  font-weight: 600;
+  word-spacing: 2rem;
+  padding-top: 1rem;
+}
+.login,
+.signup {
+  margin: 2rem;
+}
+
+.login {
+  padding: 0 1rem;
+}
+.signup {
+  padding: 0 1rem;
+}
+.login:hover {
+  background-color: var(--clr-pry-1);
+  color: var(--clr-gray-1);
+  border-radius: var(--radius);
+}
+.signup:hover {
+  background-color: var(--clr-pry-1);
+  color: var(--clr-gray-1);
+  border-radius: var(--radius);
+}
+/* ==================== nav-bar ======================= */
+.nav-bar {
+  background-color: var(--clr-sec-2);
+  max-height: 4rem;
+  padding: 1rem 0.75rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  text-align: right;
+}
+a.navbar-content {
+  padding: 0 0.75rem;
+  font-family: var(--ff-main);
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: right;
+  color: var(--clr-pry-4);
+}
+.content h1 {
+  display: inline;
+  float: left;
+  font-family: var(--ff-sub);
+}
+a.navbar-content:hover {
+  border: 1px solid var(--clr-grn-2);
+}
+/* 
+=============== footer ===================== */
+.footer {
+  background-color: var(--clr-gray-3);
+  min-height: 13rem;
+  text-align: center;
+}
+.footer-text {
+  padding: 3rem;
+  word-spacing: 0.5em;
+  font-size: 1rem;
+}
+.my-icons,
+.icons {
+  padding: 2rem;
+  font-size: 2rem;
+}
+.icons:hover {
+  color: var(--clr-pry-3);
+}
+/* -======================== login page ============================ */
+
+.login-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./image/mp-img-3.jpg") center/cover no-repeat scroll;
+  padding: 2rem;
+}
+.contact-form {
+  padding: 2rem;
+  background-color: var(--clr-pry-2);
+  text-align: center;
+  max-width: 35rem;
+  margin: 0 auto;
+  border-radius: var(--radius);
+}
+
+.contact-form:hover {
+  box-shadow: 0 2px 10px var(--clr-gray-3);
+  transform: scale(1);
+}
+.form-control {
+  background-color: var(--clr-gray-3);
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: var(--radius);
+  font-family: var(--ff-curry);
+  width: 100%;
+  padding: 0.7rem 1rem;
+  letter-spacing: var(--spacing);
+  margin-bottom: 1.5rem;
+}
+.contact-form h3 {
+  padding: 1em;
+  color: var(--clr-gray-2);
+  text-transform: uppercase;
+}
+.submit-btn {
+  background-color: var(--clr-sec-2);
+  display: inline-block;
+  border: none;
+  padding: 1rem 3rem;
+  font-family: var(--ff-main);
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+}
+.submit-btn:hover {
+  background-color: var(--clr-gray-3);
+  color: var(--clr-pry-1);
+}
+.form-control:hover {
+  background-color: var(--clr-gray-1);
+  color: var(--clr-pry-4);
+}
+
+.nav-reg {
+  display: flex;
+  justify-content: space-between;
+}
+.login-home {
+  text-align: left;
+  margin-left: 1rem;
+}
+/* -======================== Register ============================ */
+
+/* -======================== page ============================ */
+.section-title {
+  color: var(--clr-pry-1);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section-title span {
+  text-transform: uppercase;
+}
+.page-center {
+  background: var(--clr-grn-2);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.about-photo {
+  margin-top: 1rem;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--clr-pry-3);
+  object-fit: cover;
+}
+
+.about-info h4 {
+  color: var(--clr-pry-1);
+  word-spacing: 2px;
+}
+.about-info p {
+  color: var(--clr-pry-2);
+  word-spacing: 2px;
+  margin: 1rem auto;
+}
+.scroll-link {
+  background-color: var(--clr-sec-4);
+  padding: 3px;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  border-radius: 0;
+}
+
+.scroll-link:hover {
+  background: transparent;
+  border: 1px solid var(--clr-sec-4);
+  color: var(--clr-pry-4);
+}
+@media screen and (min-width: 700px) {
+  .page-center {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-info {
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  .page-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-right: 3rem;
+  }
+  .btn .scroll-link {
+    text-align: center;
+  }
+}
+
+/* ================ about ==================== */
+
+/* -======================== Blog ============================ */
+
+/* -======================== content ============================ */
+
+/* -======================== course ============================ */
+.course:hover {
+  /* transform: scale(1.01); */
+  margin: 2.5rem;
+  transition: all 0.3s ease;
+}
+.course {
+  margin: 2rem 2rem;
+  background-color: var(--clr-sec-3);
+  transition: all 0.3s ease;
+}
+
+.course-img {
+  position: relative;
+}
+.course h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--clr-pry-1);
+  text-transform: uppercase;
+}
+.course-img img {
+  object-fit: cover;
+  width: 100%;
+}
+.course-icon {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: var(--clr-pry-1);
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 789px) {
+  .courses {
+    display: flex;
+    flex: 0 0 calc(50% -2rem);
+    background: url("./image/mp-img-4.jpg");
+  }
+  .course:hover {
+    margin: 2rem;
+    box-shadow: 5px 5px 10px var(--clr-grn-2);
+    transform: scale(1.06);
+  }
+  .course:hover .course-icon {
+    transform: translateY(1.07);
+  }
+}
