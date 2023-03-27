@@ -21,7 +21,7 @@
   --ff-sub: "Alegreya";
   --ff-curry: "Satisfy";
   /* others */
-  --transition: all 3s linear;
+  --transition: all 0.3s linear;
   --radius: 1rem;
   --spacing: 1.5;
 }
@@ -63,7 +63,7 @@ a {
   font-family: var(--ff-main);
   text-transform: capitalize;
   font-size: 0.5em;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 1em;
   border-radius: var(--radius);
   display: inline-block;
@@ -97,8 +97,10 @@ a {
   background: var(--clr-sec-3);
 }
 .explore:hover {
-  background-color: var(--clr-gray-3);
-  color: var(--clr-pry-1);
+  background-color:transparent;
+  transition: var(--transition);
+  border: 3px solid var(--clr-pry-1);
+  color: var(--clr-pry-4);
   font-weight: 900;
 }
 
@@ -157,9 +159,11 @@ a.navbar-content {
   font-size: 14px;
   text-align: right;
   color: var(--clr-pry-4);
+  cursor: pointer;
 }
 .content h1 {
   display: inline;
+  cursor: pointer;
   float: left;
   font-family: var(--ff-sub);
 }
