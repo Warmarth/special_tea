@@ -97,7 +97,7 @@ a {
   background: var(--clr-sec-3);
 }
 .explore:hover {
-  background-color:transparent;
+  background-color: transparent;
   transition: var(--transition);
   border: 3px solid var(--clr-pry-1);
   color: var(--clr-pry-4);
@@ -327,6 +327,101 @@ a.navbar-content:hover {
 /* ================ about ==================== */
 
 /* -======================== Blog ============================ */
+.blog-items {
+  background: var(--clr-pry-3);
+  color: var(--clr-gray-3);
+}
+.tables_1 h4,
+.tables_3 h4,
+.tables_2 h4 {
+  font-size: 2.5rem;
+  text-shadow: var(--clr-gray-2);
+  text-transform: capitalize;
+}
+.table_1-info{
+  background: var(--clr-grn-1);
+  width: 20rem;
+  display: flex;
+  justify-content:flex-start;
+  padding-top: 0.5rem;
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+}
+.blog-search-icon {
+  display: flex;
+  gap: 0 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.blog-search-icon input,
+.blog-search-icon span{
+  background: var(--clr-sec-2);
+  padding: 0.5rem;
+  width: 17rem;
+}
+.table_1-text a {
+  background-color: var(--clr-gray-2);
+  display: inline-block;
+  padding: 0 .75rem;
+  margin: auto 0.6rem;
+  border-radius: var(--radius);
+}
+
+.table_3-text {
+  background-color: var(--clr-gray-2);
+  display: inline-block;
+  border-radius: var(--radius);
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  margin: 0.2rem auto;
+}
+.table_3-text,
+.table_1-text:hover {
+  background-color: var(--clr-sec-4);
+}
+.tables_1,
+.tables_2,
+.tables_3 {
+  padding: 1rem;
+}
+.table_1-text,
+.table_3-text {
+  padding-bottom: 0.75rem;
+  letter-spacing: 2px;
+}
+.tables_3-info {
+  display: block;
+  list-style-type: decimal;
+}
+.table_2-text img {
+  max-width: 25rem;
+  border: 2px solid var(--clr-sec-3);
+}
+.table_2-text p {
+  max-width: 30rem;
+}
+.table_2-info {
+  margin-bottom: 1rem;
+  display: flex;
+}
+@media screen and (min-width: 567px) {
+  .table_2-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2rem;
+  }
+}
+@media screen and (min-width: 695px) {
+  .blog-items {
+    display: flex;
+    flex: 0 0 calc(50% - 3rem);
+  }
+}
+@media screen and (min-width: 999px) {
+  .blog-items {
+    flex: 0 0 33.333%
+  }
+}
 
 /* -======================== content ============================ */
 
