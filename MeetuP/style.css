@@ -63,7 +63,7 @@ a {
   font-family: var(--ff-main);
   text-transform: capitalize;
   font-size: 0.5em;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: 1em;
   border-radius: var(--radius);
   display: inline-block;
@@ -375,9 +375,17 @@ a.navbar-content:hover {
   padding-left: 0.5rem;
   margin: 0.2rem auto;
 }
-.table_3-text,
-.table_1-text:hover {
-  background-color: var(--clr-sec-4);
+.table_1-text a:hover {
+  background-color: transparent;
+  transition: var(--transition);
+  border: 0.2px solid var(--clr-sec-4);
+  color: var(--clr-sec-4);
+}
+.table_3-text:hover {
+  background-color: transparent;
+  transition: var(--transition);
+  border: 0.2px solid var(--clr-sec-2);
+  color: var(--clr-sec-2);
 }
 .tables_1,
 .tables_2,
@@ -394,7 +402,8 @@ a.navbar-content:hover {
   list-style-type: decimal;
 }
 .table_2-text img {
-  max-width: 25rem;
+  width: 25rem;
+  height: 15rem;
   border: 2px solid var(--clr-sec-3);
 }
 .table_2-text p {
